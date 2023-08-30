@@ -37,6 +37,7 @@ Please follow the [Environment Setup](https://llama2-accessory.readthedocs.io/en
 * Demo:
 ```bash
 wemix_weight=path/to/WeMix-LLaMA2-7B-MM
+
 python demos/single_turn_mm.py \
 --llama_config ${wemix_weight}/params.json --tokenizer_path ${wemix_weight}/tokenizer.model \
 --pretrained_path wemix_weight
