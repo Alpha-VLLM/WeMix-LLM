@@ -56,7 +56,7 @@ torchrun --nproc-per-node=2 demos/single_turn_mm.py \
 | Shikra (Vicuna-13B)       | -                    | 73.9      |
 | Qwen-VL (Qwen-7B)         | 121.4                | 85.8      |
 | Qwen-VL-Chat              | 120.2                | 81.0      |
-| WeMix-LLaMA2-7B-MM        | 114.7                | 86.0      |
+| WeMix-LLaMA2-13B-MM        | 114.7                | 86.0      |
 
 > The multimodal benchmark is still in progress. Stay tuned!🎉
 
