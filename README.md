@@ -31,14 +31,14 @@ Please follow the [Environment Setup](https://llama2-accessory.readthedocs.io/en
 
 > Please refer to [benchmark.md](./benchmark.md) for mode details.
 
-#### WeMix-LLaMA2-7B-MM: A Multimodal LLM
+#### WeMix-LLaMA2-13B-MM: A Multimodal LLM
 
-* Weight: [Alpha-VLLM/WeMix-LLaMA2-7B-MM](https://huggingface.co/Alpha-VLLM/WeMix-LLaMA2-7B-MM)
+* Weight: [Alpha-VLLM/WeMix-LLaMA2-13B-MM](https://huggingface.co/Alpha-VLLM/WeMix-LLaMA2-13B-MM)
 * Demo:
 ```bash
-wemix_weight=path/to/WeMix-LLaMA2-7B-MM
+wemix_weight=path/to/WeMix-LLaMA2-13B-MM
 
-python demos/single_turn_mm.py \
+torchrun --nproc-per-node=2 demos/single_turn_mm.py \
 --llama_config ${wemix_weight}/params.json --tokenizer_path ${wemix_weight}/tokenizer.model \
 --pretrained_path wemix_weight
 ```
@@ -58,7 +58,7 @@ python demos/single_turn_mm.py \
 | Qwen-VL-Chat              | 120.2                | 81.0      |
 | WeMix-LLaMA2-7B-MM        | 114.7                | 86.0      |
 
-> The multimodal benchmark is still in progress. Stay tuned🎉
+> The multimodal benchmark is still in progress. Stay tuned!🎉
 
 <!-- ### Contributors -->
 
