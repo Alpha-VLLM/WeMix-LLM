@@ -1,6 +1,6 @@
 ## WeMix-LLM
 
-WeMix-LLM includes a series of LLMs and multimodal LLMs following the same paradigm. WeMix-LLM is trained with [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory).
+WeMix-LLM includes a series of LLMs and multimodal LLMs following the same paradigm. WeMix-LLM is built on [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory).
 
 ### Setup
 
@@ -44,25 +44,28 @@ python demos/single_turn_mm.py \
 ```
 * Multimodal Benchmark:
 
-| Model                     | Zero-shot Captioning |           | General VQA |        |      |                    |                 |
-|---------------------------|----------------------|-----------|-------------|--------|------|--------------------|-----------------|
-|                           | NoCaps               | Flickr30K | VQAv2dev    | OK-VQA | GQA  | SciQA-Img (0-shot) | VizWiz (0-shot) |
-| Flamingo-9B               | -                    | 61.5      | 51.8        | 44.7   | -    | -                  | 28.8            |
-| Flamingo-80B              | -                    | 67.2      | 56.3        | 50.6   | -    | -                  | 31.6            |
-| Unified-IO-XL             | 100.0                | -         | 77.9        | 54.0   | -    | -                  | -               |
-| Kosmos-1                  | -                    | 67.1      | 51.0        | -      | -    | -                  | 29.2            |
-| Kosmos-2                  | -                    | 66.7      | 45.6        | -      | -    | -                  | -               |
-| BLIP-2 (Vicuna-13B)       | 103.9                | 71.6      | 65.0        | 45.9   | 32.3 | 61.0               | 19.6            |
-| InstructBLIP (Vicuna-13B) | 121.9                | 82.8      | -           | -      | 49.5 | 63.1               | 33.4            |
-| Shikra (Vicuna-13B)       | -                    | 73.9      | 77.36       | 47.16  | -    | -                  | -               |
-| Qwen-VL (Qwen-7B)         | 121.4                | 85.8      | 78.8        | 58.6   | 59.3 | 67.1               | 35.2            |
-| Qwen-VL-Chat              | 120.2                | 81.0      | 78.2        | 56.6   | 57.5 | 68.2               | 38.9            |
-| WeMix-LLaMA2-7B-MM        | 114.7                | 86.0      |             |        |      |                    |                 |
+| Model                     | NoCaps               | Flickr30K |
+|---------------------------|----------------------|-----------|
+| Flamingo-9B               | -                    | 61.5      |
+| Flamingo-80B              | -                    | 67.2      |
+| Unified-IO-XL             | 100.0                | -         |
+| Kosmos-1                  | -                    | 67.1      |
+| Kosmos-2                  | -                    | 66.7      |
+| BLIP-2 (Vicuna-13B)       | 103.9                | 71.6      |
+| InstructBLIP (Vicuna-13B) | 121.9                | 82.8      |
+| Shikra (Vicuna-13B)       | -                    | 73.9      |
+| Qwen-VL (Qwen-7B)         | 121.4                | 85.8      |
+| Qwen-VL-Chat              | 120.2                | 81.0      |
+| WeMix-LLaMA2-7B-MM        | 114.7                | 86.0      |
 
-### Contributors
+> The multimodal benchmark is still in progress. Stay tuned🎉
 
-### Citation
+<!-- ### Contributors -->
 
 ### Acknowledgement
 
+[LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory), [LLaMA-Adapter](https://github.com/OpenGVLab/LLaMA-Adapter), [LLaMA](https://github.com/facebookresearch/llama).
+
 ### License
+
+Llama 2 is licensed under the [LLAMA 2 Community License](https://github.com/facebookresearch/llama/blob/main/LICENSE), Copyright (c) Meta Platforms, Inc. All Rights Reserved.
