@@ -2,7 +2,7 @@
 
 ### OpenCompass Benchmark
 
-> Check [OpenCompass Leaderboard](https://opencompass.org.cn/leaderboard-llm) for mode details.
+> Check [OpenCompass Leaderboard](https://opencompass.org.cn/leaderboard-llm) for more details.
 
 |             Model                       |                         | Vicuna-33B | WeMix-LLaMA2-7B | LLaMA-2-7B-Chat | Vicuna-7B | LLaMA-2-7B | Alpaca-7B | LLaMA-7B |
 |-----------------------------------------|-------------------------|------------|-----------------|-----------------|-----------|------------|-----------|----------|
