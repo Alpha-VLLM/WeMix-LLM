@@ -29,7 +29,7 @@ Please follow the [Environment Setup](https://llama2-accessory.readthedocs.io/en
 | UNDERSTANDING | 58.5       | 55.5            | 50.9            | 50.5      | 42.4       | 45.1      | 38       |
 | REASONING     | 44.7       | 47.4            | 41.4            | 39.9      | 40.1       | 38.1      | 38.5     |
 
-> Please refer to [benchmark.md](./benchmark.md) for mode details.
+> Please refer to [benchmark.md](./benchmark.md) for more details.
 
 #### WeMix-LLaMA2-13B-MM: A Multimodal LLM
 
