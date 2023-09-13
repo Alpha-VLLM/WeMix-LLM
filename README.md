@@ -8,26 +8,26 @@ Please follow the [Environment Setup](https://llama2-accessory.readthedocs.io/en
 
 ### Models
 
-#### WeMix-LLaMA2-7B: An Instruction-Following LLM
-* Weight: [Alpha-VLLM/WeMix-LLaMA2-7B](https://huggingface.co/Alpha-VLLM/WeMix-LLaMA2-7B)
+#### WeMix-LLaMA2: An Instruction-Following LLM
+* Weight: [WeMix-LLaMA2-7B](https://huggingface.co/Alpha-VLLM/WeMix-LLaMA2-7B), [WeMix-LLaMA2-70B](https://huggingface.co/Alpha-VLLM/WeMix-LLaMA2-70B).
 * Demo:
     ```bash
-    wemix_weight=path/to/WeMix-LLaMA2-7B/
+    wemix_weight=path/to/WeMix-LLaMA2-[7B/70B]/
 
     python demos/multi_turn.py \
     --llama_config ${wemix_weight}/params.json --tokenizer_path ${wemix_weight}/tokenizer.model \
-    --pretrained_path ${wemix_weight}
+    --pretrained_path ${wemix_weight} --n_gpus [1/4]
     ```
 * Benchmark (OpenCompass):
 
-| Model         | Vicuna-33B | WeMix-LLaMA2-7B | LLaMA-2-7B-Chat | Vicuna-7B | LLaMA-2-7B | Alpaca-7B | LLaMA-7B |
-|---------------|------------|-----------------|-----------------|-----------|------------|-----------|----------|
-| OVERALL       | 50         | 49.6            | 44.8            | 43.4      | 41.6       | 39.9      | 38.5     |
-| EXAM          | 49.2       | 45.5            | 40.1            | 40.5      | 35.5       | 35.3      | 31.2     |
-| LANGUAGE      | 44.9       | 45.1            | 44              | 39.6      | 44.1       | 39.5      | 40.5     |
-| KNOWLEDGE     | 61.3       | 59.4            | 54.3            | 51.7      | 53.3       | 44.6      | 49.6     |
-| UNDERSTANDING | 58.5       | 55.5            | 50.9            | 50.5      | 42.4       | 45.1      | 38       |
-| REASONING     | 44.7       | 47.4            | 41.4            | 39.9      | 40.1       | 38.1      | 38.5     |
+| Model         | WeMix-LLaMA2-70B | LLaMA2-70B | Vicuna-33B | WeMix-LLaMA2-7B | LLaMA-2-7B-Chat | Vicuna-7B | LLaMA-2-7B |
+|---------------|------------------|------------|------------|-----------------|-----------------|-----------|------------|
+| OVERALL       | 58.6             | 57.4       | 50         | 49.6            | 44.8            | 43.4      | 41.6       |
+| EXAM          | 62.3             | 57.3       | 49.2       | 45.5            | 40.1            | 40.5      | 35.5       |
+| LANGUAGE      | 52.6             | 51.6       | 44.9       | 45.1            | 44              | 39.6      | 44.1       |
+| KNOWLEDGE     | 69               | 67.7       | 61.3       | 59.4            | 54.3            | 51.7      | 53.3       |
+| UNDERSTANDING | 62.9             | 60.8       | 58.5       | 55.5            | 50.9            | 50.5      | 42.4       |
+| REASONING     | 54.1             | 55         | 44.7       | 47.4            | 41.4            | 39.9      | 40.1       |
 
 > Please refer to [benchmark.md](./benchmark.md) for more details.
 
@@ -40,7 +40,7 @@ wemix_weight=path/to/WeMix-LLaMA2-13B-MM
 
 torchrun --nproc-per-node=2 demos/single_turn_mm.py \
 --llama_config ${wemix_weight}/params.json --tokenizer_path ${wemix_weight}/tokenizer.model \
---pretrained_path wemix_weight
+--pretrained_path ${wemix_weight}
 ```
 * Multimodal Benchmark:
 
