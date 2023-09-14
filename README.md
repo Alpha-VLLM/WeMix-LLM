@@ -2,7 +2,7 @@
 
 WeMix-LLM includes a series of LLMs and multimodal LLMs following the same paradigm. WeMix-LLM is built on [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory).
 
-<img src="docs/opencompass_all.png" width="80%" />
+<img src="docs/opencompass_all.png" width="90%" />
 
 ### Setup
 
