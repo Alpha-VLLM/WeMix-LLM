@@ -4,6 +4,10 @@ WeMix-LLM includes a series of LLMs and multimodal LLMs following the same parad
 
 <img src="docs/opencompass_all.png" width="90%" />
 
+### Changelog
+* **[2023-10-16]** WeMix-LLM-V2 is now avaliable at [WeMix-LLaMA2-V2-70B](https://huggingface.co/Alpha-VLLM/WeMix-LLaMA2-V2-70B).
+* **[2023-8-31]** Release WeMix-LLM!
+
 ### Setup
 
 Please follow the [Environment Setup](https://llama2-accessory.readthedocs.io/en/latest/install.html) of LLaMA2-Accessory.
@@ -11,7 +15,7 @@ Please follow the [Environment Setup](https://llama2-accessory.readthedocs.io/en
 ### Models
 
 #### WeMix-LLaMA2: An Instruction-Following LLM
-* Weight: [WeMix-LLaMA2-7B](https://huggingface.co/Alpha-VLLM/WeMix-LLaMA2-7B), [WeMix-LLaMA2-70B](https://huggingface.co/Alpha-VLLM/WeMix-LLaMA2-70B).
+* Weight: [WeMix-LLaMA2-7B](https://huggingface.co/Alpha-VLLM/WeMix-LLaMA2-7B), [WeMix-LLaMA2-70B](https://huggingface.co/Alpha-VLLM/WeMix-LLaMA2-70B), [WeMix-LLaMA2-V2-70B](https://huggingface.co/Alpha-VLLM/WeMix-LLaMA2-V2-70B).
 * Demo:
     ```bash
     wemix_weight=path/to/WeMix-LLaMA2-[7B/70B]/
